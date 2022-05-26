@@ -1,7 +1,7 @@
 baseURL = 'http://fallingleaf.com/'
 languageCode = 'en-us'
 title = 'Falling Leaf Tree Services, LLC'
-theme = 'hugo-universal-theme'
+theme = 'hugo-universal-theme-fork'
 author = 'Scott Cereghino'
 
 [menu]
