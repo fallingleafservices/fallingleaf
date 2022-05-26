@@ -1,3 +1,4 @@
 [submodule "themes/hugo-universal-theme-fork"]
 	path = themes/hugo-universal-theme-fork
-	url = git@github.com:walkersorlie/hugo-universal-theme-fork.git
+	url = https://github.com/walkersorlie/hugo-universal-theme-fork.git
+	
