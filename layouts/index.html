@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+		
+		{{ partial "main_heading.html" . }}
+		
+		<div class="divider"></div>
+		
+		{{ partial "who-i-am.html" . }}
+		
+		<div class="divider"></div>
+		
+		<h2 class="text-center">Services</h2>
+		
+		{{ partial "carousel.html" . }}
+		
+		{{ partial "services.html" . }}
+		
+		<div class="divider"></div>
+		
+		{{ partial "work.html" . }}
+		
+		<div class="divider"></div>
+		
+		{{ partial "contact_me.html" . }}
+		
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

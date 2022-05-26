@@ -1,0 +1,61 @@
+.box-image-text .image {
+  min-height: 190px;
+  max-height: 190px;
+}
+
+.box-image-text .image img {
+  max-height: 190px;
+  margin: auto;
+}
+
+.box-simple {
+  min-height: 230px;
+}
+
+.divider {
+        height: 5rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+	  
+
+.main-heading {
+	height: 600px;
+	background-image: url(/img/ponderosa.jpg);
+}
+
+.main-heading-overlay {
+	background: rgba(255, 234, 208, .5);
+}	  
+
+.main-heading-overlay h1, .main-heading-overlay p{
+	color: #221D23;
+}
+
+.who-i-am {
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+.services {
+	overflow: hidden;
+}
+
+.services h4 {
+	margin-bottom: 10px;
+}
+
+.work {
+	margin-bottom: 40px;
+}
+
+.contact-me {
+	margin-bottom: 40px;
+}
+
+p {
+	line-height:1.875em; 
+	font-size:15px;
+}
