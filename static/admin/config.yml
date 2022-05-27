@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: static/img
+public_folder: /img
+collections:
+    - name: "who-i-am"
+      label: "Who I Am"
+      files:
+        - label: "Who I Am File Content"
+          name: "who-i-am-file-content"
+          file: "content/whoiam.yml"
+          fields: 
+            - {label: "Content", name: "content", widget: "markdown"}
+            - {label: "Photo", name: "photo", widget: "image"}
+    

@@ -39,7 +39,7 @@ author = 'Scott Cereghino'
 	defaultDescription = "Tree and stump removal services in Bend, Oregon"
 	
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
-    enableGoogleMaps = true
+    enableGoogleMaps = false
     googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
 
     latitude = "43.992395179112826"
@@ -62,7 +62,7 @@ author = 'Scott Cereghino'
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
-	email = "walkersorlie@gmail.com"
+	email = "fallingleafservices@gmail.com"
     formspree_action = "https://formspree.io/f/mzboyoea"
     contact_form_ajax = false
 
@@ -91,13 +91,12 @@ author = 'Scott Cereghino'
     dropdown_mouse_over = false
 
     disabled_logo = false
-    logo_text = "Universal"
+    logo_text = "Falling Leaf"
 
     logo = "img/logo3.jpg"
     logo_small = "img/logo-small.jpg"
     contact_url = "/contact/"
     address = """<p class="text-uppercase"><strong>Falling Leaf Tree Care, LLC</strong>
-        <br>19369 Indian Summer Rd.
         <br>Bend, OR 97702
       </p>
       """
