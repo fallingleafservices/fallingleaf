@@ -1,5 +1,5 @@
 <div class="container text-center contact-me">
 	<h2>Get a Quote</h2>
-	<p>If you’re looking for an experienced Tree Service Contractor for your next project give me a ring!  I work at a local nursery to stay knowledgeable and up to date on the local trees and their health. Knowledge of the the many varieties of trees which grow here in Central Oregon help make informed decisions and issues which inevitably arise. We explain every step in the process to you to ensure you have the service you need. If you are looking for a simple pruning job, we might just arrive with the tools and the gear and be ready to start right away. It all depends on what the days are looking like. Call today for your free estimate.</p>
+	{{ .Site.Data.contactme.contactContent | safeHTML }}
 	<a href="{{ default "/contact" .Site.Params.contact_url }}" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
 </div>
