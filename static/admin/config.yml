@@ -57,8 +57,8 @@ collections:
               name: "project2Image"
               widget: "object"
               fields:
-                - {label: "Image", name: "image", widget: "image"}
-                - {label: "Alternate Text", name: "src", widget: "string"}
+                - {label: "Image", name: "src", widget: "image"}
+                - {label: "Alternate Text", name: "alt", widget: "string"}
         - label: "Contact Me"
           name: "contact-me-file-content"
           file: "data/contactme.yml"
