@@ -3,6 +3,7 @@ backend:
   branch: master
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 collections:
     - name: "index"
       label: "Homepage"
@@ -11,25 +12,56 @@ collections:
           name: "who-i-am-file-content"
           file: "data/whoiam.yml"
           fields: 
+            - {label: "Title", name: "whoIAmtitle", widget: "string"}
             - {label: "Content", name: "content", widget: "markdown"}
-            - {label: "Image", name: "image", widget: "image"}
+            - label: "Image"
+              name: "image"
+              widget: "list"
+              fields:
+                - {label: "Image", name: "src", widget: "image"}
+                - {label: "Alternate Text", name: "alt", widget: "string"}
+        - label: "Services Title"
+          name: "services-title-content"
+          file: "data/servicesHeading.yml"
+          fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Subheading", name: "subheading", widget: "string"}
         - label: "Services"
           name: "services-file-content"
           file: "data/services.yml"
           fields:
+            - {label: "Stump Grinding Title", name: "stumpGrindingTitle", widget: "string"}
             - {label: "Stump Grinding", name: "stumpGrindingContent", widget: "markdown"}
+            - {label: "Tree Pruning Title", name: "treePruningTitle", widget: "string"}
             - {label: "Tree Pruning", name: "treePruningContent", widget: "markdown"}
+            - {label: "Tree Removal Title", name: "treeRemovalTitle", widget: "string"}
             - {label: "Tree Removal", name: "treeRemovalContent", widget: "markdown"}
+            - {label: "Bonsai Title", name: "bonsaiTitle", widget: "string"}
             - {label: "Bonsai", name: "bonsaiContent", widget: "markdown"}
         - label: "Projects"
           name: "projects-file-content"
           file: "data/projects.yml"
           fields:
+            - {label: "Project 1 title", name: "title1", widget: "string"}
             - {label: "Project 1", name: "project1Content", widget: "markdown"}
+            - label: "Project 1 Photo"
+              name: "project1Image"
+              widget: "list"
+              fields:
+                - {label: "Image", name: "src", widget: "image"}
+                - {label: "Alternate Text", name: "alt", widget: "string"}
+            - {label: "Project 2 title", name: "title2", widget: "string"}
             - {label: "Project 2", name: "project2Content", widget: "markdown"}
-        - name: "contact-me-file-content"
-          label: "Contact Me"
+            - label: "Project 2 Photo"
+              name: "project2Image"
+              widget: "list"
+              fields:
+                - {label: "Image", name: "image", widget: "image"}
+                - {label: "Alternate Text", name: "src", widget: "string"}
+        - label: "Contact Me"
+          name: "contact-me-file-content"
           file: "data/contactme.yml"
           fields:
-            - {name: "contactContent", label: "Contact Me Content", widget: "markdown"}
+            - {name: "title", label: "Title", widget: "string"}
+            - {name: "content", label: "Contact Me Content", widget: "markdown"}
                 

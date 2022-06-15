@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row work">
-		<h2 class="text-center">Projects</h2>
-		<p class="text-center">Some Examples of My Work</p>
+		<h2 class="text-center">{{ .Site.Data.projects.title | safeHTML }}</h2>
+		<p class="text-center">{{ .Site.Data.projects.subheading | safeHTML }}</p>
 	</div>
 	<div class="row">
 		<div class="col-md-6">
@@ -11,7 +11,7 @@
 		</div>
 		<div class="col-md-6">
 			<div class="box-simple">
-				<img src="/img/work/work_bench_edited.jpg" class="img-fluid" alt="Custom bench">
+				<img src="{{ .Site.Data.projects.project1Image.src }}" class="img-fluid" alt="{{ .Site.Data.projects.project1Image.alt }}">
 			</div>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 	<div class="row">
 		<div class="col-md-6">
 			<div class="box-simple">
-				<img src="/img/work/work_tree_edited.jpg" class="img-fluid" alt="Cutting down a tree">
+				<img src="{{ .Site.Data.projects.project2Image.src }}" class="img-fluid" alt="{{ .Site.Data.projects.project2Image.alt }}">
 			</div>
 		</div>
 		<div class="col-md-6">

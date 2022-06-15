@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-6 panel panel-default">
 			<div class="panel-heading text-center services">
-				<h4 class="panel-title">Stump Removal</h4>
+				<h4 class="panel-title">{{ .Site.Data.services.stumpGrindingTitle | safeHTML }}</h4>
 				<img src="/img/carousel/stump_grinder_edited.jpg" class="img-fluid" alt="Stump grinder">
 			</div>
 			<div class="panel-body text-center">
@@ -11,7 +11,7 @@
 		</div>
 		<div class="col-md-6 panel panel-default">
 			<div class="panel-heading text-center services">
-			<h4 class="panel-title">Tree Pruning</h4>
+			<h4 class="panel-title">{{ .Site.Data.services.treePruningTitle | safeHTML }}</h4>
 				<img src="/img/carousel/tree_pruning2.jpg" class="img-fluid" alt="Pruning a tree">
 			</div>
 			<div class="panel-body text-center">
@@ -22,7 +22,7 @@
 	<div class="row">
 		<div class="col-md-6 panel panel-default">
 			<div class="panel-heading text-center services">
-			<h4 class="panel-title">Tree Removal</h4>
+			<h4 class="panel-title">{{ .Site.Data.services.treeRemovalTitle | safeHTML }}</h4>
 				<img src="/img/carousel/tree_removal_edited.jpg" class="img-fluid" alt="Removing a large tree">
 			</div>
 			<div class="panel-body text-center">
@@ -31,7 +31,7 @@
 		</div>
 		<div class="col-md-6 panel panel-default">
 			<div class="panel-heading text-center services">
-			<h4 class="panel-title">Bonsai</h4>
+			<h4 class="panel-title">{{ .Site.Data.services.bonsaiTitle | safeHTML }}</h4>
 				<img src="/img/carousel/bonsai_edited.jpg" class="img-fluid" alt="bonsai">
 			</div>
 			<div class="panel-body text-center">

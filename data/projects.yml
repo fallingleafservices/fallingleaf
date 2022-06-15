@@ -1,3 +1,6 @@
+title: "Projects"
+subheading: "Some of the work that I've done"
+
 project1Content: Home Construction Projects are always a giant step towards life
   long goals. We want your projects to be successful!! I have worked on large
   scale Forest Harvest projects, so a home project is definitely within my
@@ -5,6 +8,8 @@ project1Content: Home Construction Projects are always a giant step towards life
   the best and most accurate job for the project. Small projects are always
   welcome, such as falling trees to create sun for a garden, or removing the
   ugly stump in the front yard, I am here to help out.
+project1Image: {src: "/img/work/work_bench_edited.jpg", alt: "Custom bench"}
+
 project2Content: If you’re looking for a licensed Tree Service to manage a large
   area of 5-15 acres (or more) around your home to create a pleasing atmosphere
   and create a fire defensible space. Feel free to reach out. I have worked on a
@@ -12,3 +17,4 @@ project2Content: If you’re looking for a licensed Tree Service to manage a lar
   Selective tree harvesting and pruning is perfect for these types of projects.
   The insight of knowing how to accomplish the project needs are important.  We
   are here to help you with your goals.
+project2Image: {src: "/img/work/work_tree_edited.jpg", alt: "Cutting down a tree"}
