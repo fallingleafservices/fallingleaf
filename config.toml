@@ -1,4 +1,4 @@
-baseURL = 'http://fallingleaf.com/'
+baseURL = 'https://fallingleaf.com/'
 languageCode = 'en-us'
 title = 'Falling Leaf Tree Services, LLC'
 theme = 'hugo-universal-theme-fork'
