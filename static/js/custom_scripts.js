@@ -4,8 +4,6 @@ const submitButton = document.getElementById('submitButton');
 
 function handleSubmit(event) {
 	let formData = new FormData(contactForm);
-	console.log(formData.get("nameInput"));
-	console.log(formData.get("emailInput"));
 	fetch("/", {
 	method: "POST",
 	headers: { "Content-Type": "application/x-www-form-urlencoded" },

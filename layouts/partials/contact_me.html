@@ -2,9 +2,6 @@
 	<h2>{{ .Site.Data.contactme.title | safeHTML }}</h2>
 		<p>{{ .Site.Data.contactme.content | safeHTML }}</p>
 	
-	<div id="formSubmitSuccess" class="hidden">
-		<p><strong>Your request was submitted successfully! I will be in touch with you soon.</strong></p>
-	</div>
 	<div class="content">
 		<form id="contactForm" name="Contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
 			<p class="hidden">
@@ -15,16 +12,16 @@
 			<div class="row flex-center">
 				<div class="col-md-6">
 					<div class="form-group">
-						<label class="form-label" for="nameField">Name</label>
-						<input type="text" class="form-control" id="nameField" required>
+						<label class="form-label" for="nameInput">Name</label>
+						<input type="text" class="form-control" id="nameInput" name="nameInput" required>
 					</div>
 				</div>
 			</div>
 			<div class="row flex-center">
 				<div class="col-md-6">
 					<div class="form-group">
-						<label class="form-label" for="emailField">Email</label>
-						<input type="email" class="form-control" id="emailField" required>
+						<label class="form-label" for="emailInput">Email</label>
+						<input type="email" class="form-control" id="emailInput" name="emailInput" required>
 					</div>
 				</div>
 			</div>
@@ -39,4 +36,9 @@
 			<input type="button" class="btn btn-default" id="submitButton" value="Send Message">
 		</form>
 	</div>
+	
+	<div id="formSubmitSuccess" class="hidden-success">
+		<p><strong>Your request was submitted successfully! I will be in touch with you soon.</strong></p>
+	</div>
+	
 </div>
