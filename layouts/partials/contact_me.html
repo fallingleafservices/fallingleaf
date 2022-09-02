@@ -2,8 +2,11 @@
 	<h2>{{ .Site.Data.contactme.title | safeHTML }}</h2>
 		<p>{{ .Site.Data.contactme.content | safeHTML }}</p>
 	
+	<div id="formSubmitSuccess" class="hidden">
+		<p><strong>Your request was submitted successfully! I will be in touch with you soon.</strong></p>
+	</div>
 	<div class="content">
-		<form id="contactForm" class="needs-validation" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+		<form id="contactForm" name="Contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
 			<p class="hidden">
 				<label>
 				  Don’t fill this out if you’re human: <input name="bot-field" />

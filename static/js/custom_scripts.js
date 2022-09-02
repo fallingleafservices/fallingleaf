@@ -1,15 +1,24 @@
+const contactForm = document.getElementById('contactForm');
+const submitButton = document.getElementById('submitButton');
 
-function handleSubmit() {
-  let myForm = document.getElementById("contactForm");
-  let formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-		
-		console.log("Form successfully submitted")
+
+function handleSubmit(event) {
+	let formData = new FormData(contactForm);
+	console.log(formData.get("nameInput"));
+	console.log(formData.get("emailInput"));
+	fetch("/", {
+	method: "POST",
+	headers: { "Content-Type": "application/x-www-form-urlencoded" },
+	body: new URLSearchParams(formData).toString(),
 	})
-    .catch((error) => alert(error));
+	.then(() => {
+		document.getElementById("formSubmitSuccess").style.display = 'block';
+		console.log("Form successfully submitted");
+	})
+	.catch((error) => {
+		alert('There was a problem submitting the form. Please try again.');
+		console.log(error);
+	});
 };
+
+submitButton.addEventListener('click', handleSubmit, false);
