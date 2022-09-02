@@ -1,5 +1,39 @@
 <div class="container text-center contact-me">
 	<h2>{{ .Site.Data.contactme.title | safeHTML }}</h2>
 		<p>{{ .Site.Data.contactme.content | safeHTML }}</p>
-	<a href="{{ default "/contact" .Site.Params.contact_url }}" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
+	
+	<div class="content">
+		<form id="contactForm" class="needs-validation" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+			<p class="hidden">
+				<label>
+				  Don’t fill this out if you’re human: <input name="bot-field" />
+				</label>
+			</p>
+			<div class="row flex-center">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="form-label" for="nameField">Name</label>
+						<input type="text" class="form-control" id="nameField" required>
+					</div>
+				</div>
+			</div>
+			<div class="row flex-center">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="form-label" for="emailField">Email</label>
+						<input type="email" class="form-control" id="emailField" required>
+					</div>
+				</div>
+			</div>
+			<div class="row flex-center">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="form-label" for="messageInput">Ask me anything!</label>	
+						<textarea class="form-control" id="messageInput" placeholder="" name="messageInput" style="height:200px" required></textarea>
+					</div>
+				</div>
+			</div>
+			<input type="button" class="btn btn-default" id="submitButton" value="Send Message">
+		</form>
+	</div>
 </div>
